@@ -1,0 +1,143 @@
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+  /* body {
+    font-family: "Lato";
+  } */
+/* end nawbar */
+
+
+/* *{
+    margin: auto;
+    background-color: coral;
+}
+#main{
+text-align: center;
+
+}
+
+#heading{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+p{
+    padding: 10px;
+    /* border: 1px solid; */
+    /* border: 1px solid firebrick; */
+    /*text-align: center;
+}
+input{
+    padding: 15px;
+    width: 30%;
+    border: solid 1px;
+    margin: 2px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: white;
+}
+#btn{
+    border: 1px solid;
+    width:16%;
+}
+#btn:hover{
+    background-color: greenyellow;
+}
+
+
+@media screen and (max-width: 768px) {
+    #main{
+        text-align: center}
+        
+   #heading{
+       text-align: center;
+   }
+    input {
+        width: 49%;
+    }
+    #btn{
+        border: 1px solid;
+        width:26%;
+        /* margin: 0px; 
+    }
+    #btn:hover{
+        background-color: greenyellow;
+    }
+    p{
+        padding: 10px;
+    }
+
+    }
+
+@media screen and (max-width: 360px) {
+    #heading{
+        text-align: center;
+    }
+    input {
+        width: 90%;
+    }
+    #btn{
+        border: 1px solid;
+        width:48%;
+        /* margin: 0px; 
+    }
+    #btn:hover{
+        background-color: greenyellow;
+    }
+    p{
+        padding: 10px;
+        /* border: 1px solid; 
+        /* border: 1px solid firebrick; 
+        text-align: center;
+    }
+    
+
+  */
+
+  /* second form */
+   

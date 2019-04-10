@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+body{
+margin: 0px;
+padding: 0px;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+li {
+float: left;
+padding: 2px 0px 2px 0px;
+} 
+li a, .dropbtn {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 5px 5px;
+text-decoration: none;
+}
+/* li a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+padding-bottom: 20px;
+} */
+/* li a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+} */
+#drop:hover #drop {
+background-color: black;
+}
+/* #drop:hover #drop {
+background-color: red;
+} */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #dfdddd;
+min-width: 17%;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+border: 1px solid #cfc8c8;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+} 
+.dropdown-content a:hover {background-color: #f1f1f1
+}  
+.dropdown:hover .dropdown-content {
+display: block;
+}
+#drop{
+float: right;
+padding:0px 50px 0px 15px;
+}
+.dropdown-content{
+margin: auto;
+}
+#user{
+float: right;
+color: white;
+padding: 15px;
+}
+#image:hover{
+background-color: #333;
+}
+/* admin form css */
+.input-container {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+width: 100%;
+margin-bottom: 15px;
+}
+.icon {
+padding: 10px;
+background: dodgerblue;
+color: white;
+min-width: 50px;
+text-align: center;
+}
+.input-field {
+width: 100%;
+padding: 10px;
+outline: none;
+}
+.input-field:focus {
+border: 2px solid dodgerblue;
+}
+/* Set a style for the submit button */
+.btn {
+background-color: dodgerblue;
+color: white;
+border: none;
+cursor: pointer;
+width: 40%;
+opacity: 0.9;
+border: 1px solid rgb(61, 83, 104);
+padding: 10px;
+outline: none;
+float: right;
+}
+#add{
+margin-right: 7%;
+}
+.btn:hover {
+opacity: 1;
+}
+.input-field{
+float: right;
+width: 73%;
+margin-left: 3px;
+}
+#ans{
+width: 40%;
+margin-right: 0px;
+margin-left: 15%;
+}
+#answer{
+width: 50%;
+margin-right: 7%;
+}
+#user{
+float: right;
+color: white;
+padding:15px 20px 15px 30px;
+margin: 4px 0px 20px 4px;
+}
+.one{
+    margin: 6%;
+    height: 200px;
+    width: 200px;
+}
+
+#imgDiv{
+    padding: 4%;
+text-align: center;
+}
+    </style>
+
+<body>
+<div id="mainDiv">
+<ul>
+<h2> <li><a href="home.html">Home</a></li></h2>
+<h2><li><a href="admin.html">Admin</a></li></h2>
+<!-- <h2> <li><a href="quiz.html">Student</a></li></h2> -->
+<li class="dropdown" id="drop">
+<a href  id="image"> <img src="icon.png"></a>
+<div class="dropdown-content">
+<a id="sign"  onclick="logout()">logout</a>
+<a href="" onclick="popup()">Login</a>
+</div>
+</li>
+<h2><span id="user"> User:<span id="user2"></span></span></h2> 
+</ul>   
+</div>
+<div id="imgDiv">
+    <img src="html.png" class="one">
+    <img src="two.png" class="one">
+    <img src="three.png" class="one">
+
+
+
+
+</div>
+</body>
+<script src="quiz.js"></script>
+<script src="home.js"></script>
+<script src="admin.js"></script>
+
+
+</html>

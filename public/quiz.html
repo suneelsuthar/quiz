@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+
+<style>
+body{
+margin: 0px;
+padding: 0px;
+}
+/* admin form css */
+.input-container {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+width: 100%;
+margin-bottom: 15px;
+float: left;
+}
+.icon {
+padding: 10px;
+background: dodgerblue;
+color: white;
+min-width: 50px;
+text-align: center;
+}
+.input-field {
+padding: 10px;
+outline: none;
+}
+.input-field:focus {
+border: 2px solid dodgerblue;
+}
+/* Set a style for the submit button */
+.btn {
+background-color: dodgerblue;
+color: white;
+border: none;
+cursor: pointer;
+width: 93%;
+opacity: 0.9;
+border: 1px solid rgb(61, 83, 104);
+padding: 10px;
+outline: none;
+float: right;
+}
+#add{
+margin-right: 7%;
+}
+.btn:hover {
+opacity: 1;
+}
+.input-field{
+float: left;
+/* width: 75%; */
+margin-left: 3px;
+}
+#show ,#result1{
+text-align:center;
+vertical-align: middle;
+color: rgb(164, 236, 55)
+}
+#show2, #result2{
+text-align:center;
+vertical-align: middle;
+color: rgb(160, 22, 22)
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+li {
+float: left;
+} 
+li a, .dropbtn {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 5px 5px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: rgb(131, 119, 119);
+}
+  #drop{
+float: right;
+padding:0px 50px 0px 15px;
+}
+#user{
+float: right;
+color: white;
+padding:2px 20px 2px 20px;
+margin: 4px 0px 1px 0px;
+}
+#logout{
+border: 2px solid white;
+border-radius: 20px;
+padding:2px 20px 2px 20px;
+margin: 4px 0px 1px 0px;
+}     
+</style>
+
+<body>
+<div id="mainDiv">
+<ul>
+<li style="padding-left: 15px"><h2 style="color:white;">online Test</h2></li>
+<li class="dropdown" id="drop">
+<a href="home.html" id="logout"><h3 onclick="popup()">Go back</h3></a>          
+</li>
+<h2><span id="user"> User: <span id="user2"></span></span></h2>
+</ul>  
+</div>
+<h1>welcome to student test page(quiz)</h1>
+ <!-- adimin data -->
+<div id="toper">
+<div style="max-width:500px;margin:auto">
+<h2 style="text-align:center;">Attempt test</h2>
+<div class="input-container">
+<p id="question"></p>
+</div>
+<div class="input-container">
+      <!-- <i>Option 1:</i> -->
+<input class="input-field" type="radio"id="opt1" name="radioBtn" value="abc"><span id="one"></span>
+</div>
+<div class="input-container">
+      <!-- <i>Option 2:</i> -->
+<input class="input-field" type="radio" id="opt2" name="radioBtn" value="abc" ><span id="two"></span>
+</div>
+<div class="input-container">
+      <!-- <i>Option 3:</i> -->
+<input class="input-field" type="radio"id="opt3" name="radioBtn" value="abc"><span id="three"></span>     
+</div>
+<input type="button" class="btn" id="add" value= "next" onclick="next()">
+<br><br><br>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+
+<h1 id="show"><br><h1 id="result1"></h1></h1>
+<h1 id="show2"><br><h1 id="result2"></h1></h1>
+
+<script src="admin.js"></script>
+<script src="quiz.js"></script>
+
+</body>
+</html>

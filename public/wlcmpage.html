@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+    margin: 0px;
+    padding: 0px;
+  }
+ 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(131, 119, 119);
+  }
+
+
+
+  #drop{
+    float: right;
+    padding:0px 50px 0px 15px;
+
+  }
+ 
+
+  #user{
+    float: right;
+    color: white;
+    padding:2px 20px 2px 20px;
+      margin: 4px 0px 1px 0px;
+  }
+  #logout{
+      border: 2px solid white;
+      border-radius: 20px;
+      padding:2px 20px 2px 20px;
+      margin: 4px 0px 1px 0px;
+  }
+  #heading,#welcome,#count{
+    margin-top: 10px;
+    color:greenyellow;
+    text-align: center;
+  }
+
+    </style>
+    
+</head>
+
+<body>
+    
+  <div id="mainDiv">
+    <!-- <ul>
+            <li style="padding-left: 15px"><h2 style="color:white;">online Test</h2></li>
+      <li class="dropdown" id="drop">
+        <a href="javascript:void(0)" id="logout"><h3 onclick="popup()">logout</h3></a>
+        
+      </li>
+      <h2><span id="user"> User: <span id="user2"></span></span></h2>
+    </ul> -->
+    <div>
+<h1 id="heading">you already submited test</h1>      
+<h1 id="welcome"></h1>
+<h1 id="count"></h1>
+
+    </div>
+
+
+  </div>
+<script src="wlcmpage.js"></script>
+</body>
+</html>
